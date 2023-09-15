@@ -17,11 +17,11 @@
                             </i>
                             <p>My projects</p>
                         </a>
-                        <a>
+                        <a href="https://github.com/ort01/CV">
                             <i class="material-symbols-outlined">
                                 link
                             </i>
-                            <p>This CV is wrote in Vue.js</p>
+                            <p>This CV is written in Vue.js</p>
 
                         </a>
                     </div>
@@ -131,13 +131,14 @@
                         <p>Native</p>
                     </div>
                     <div class="content">
-                        <p>Hungarian</p>
-                        <p>Advanced</p>
-                    </div>
-                    <div class="content">
                         <p>English</p>
                         <p>B2 Certified</p>
                     </div>
+                    <div class="content">
+                        <p>Hungarian</p>
+                        <p>Advanced</p>
+                    </div>
+
                     <div class="content">
                         <p>Czech</p>
                         <p>Advanced</p>
@@ -272,7 +273,7 @@
         width: 100%;
         position: absolute;
         bottom: 0%;
-        right: 14%;
+        right: 12%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -284,17 +285,23 @@
 
             & img {
                 width: 90%;
-                margin-bottom: 15px;
+                margin-bottom: 8px;
             }
         }
 
         &--right {
-            margin-top: 20px;
+            margin-top: 10px;
 
             & h1 {
+                font-size: 32px;
                 text-transform: uppercase;
                 letter-spacing: 4px;
             }
+
+            & h1:nth-child(1) {
+                letter-spacing: 8px;
+            }
+
 
             & h4 {
                 text-transform: uppercase;
@@ -304,15 +311,15 @@
             }
 
             & hr {
-                margin-top: 10px;
-                width: 50%;
+                margin-top: 15px;
+                width: 155%;
                 border: none;
                 border-bottom: 1px solid $color-beige-dark;
             }
 
             & a {
                 color: rgb($color-soft-black-light, .8);
-                margin-top: 20px;
+                margin-top: 15px;
                 width: fit-content;
                 display: flex;
                 align-items: center;
@@ -346,8 +353,10 @@
 
         &--contact {
             margin-top: -50px;
+            position: relative;
 
             & .content {
+                cursor: pointer;
                 display: flex;
                 align-items: center;
                 padding: 10px 0;
