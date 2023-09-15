@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #b3b3b3;
+  margin: 0;
+  padding: 0;
+  color: $color-soft-black-light;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+page {
+  background: $color-white;
+  display: block;
+  padding: 0;
+  margin: auto;
+  // position: relative;
+  overflow: hidden;
+}
+
+page[size="A4"] {
+  width: 21cm;
+  height: 29.7cm;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+//icons
+.md-18 { font-size: 18px; }
+.md-24 { font-size: 24px; }
+.md-30 { font-size: 30px; }
+.md-36 { font-size: 36px; }
+.md-48 { font-size: 48px; }
