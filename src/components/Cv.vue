@@ -280,12 +280,15 @@
         // gap: 40px;
 
         &--left {
-            width: 25%;
-            margin-right: 10px;
+            width: 23%;
+            margin-right: 45px;
+            // object-fit: cover;
 
             & img {
-                width: 90%;
+                width: 100%;
                 margin-bottom: 8px;
+                object-fit: scale-down;
+                // object-position: 50% 50%;
             }
         }
 
@@ -311,7 +314,7 @@
             }
 
             & hr {
-                margin-top: 15px;
+                margin: 15px 0;
                 width: 155%;
                 border: none;
                 border-bottom: 1px solid $color-beige-dark;
@@ -319,7 +322,6 @@
 
             & a {
                 color: rgb($color-soft-black-light, .8);
-                margin-top: 15px;
                 width: fit-content;
                 display: flex;
                 align-items: center;
@@ -340,19 +342,19 @@
 }
 
 .body {
-    margin-top: 10px;
+    margin-top: 18px;
     display: flex;
     width: 100%;
     height: 75%;
 
     &__left {
         width: 40%;
-        height: 95%;
+        height: 94%;
         padding: 0 30px;
         border-right: 1px solid $color-beige-dark;
 
         &--contact {
-            margin-top: -50px;
+            margin-top: -55px;
             position: relative;
 
             & .content {
