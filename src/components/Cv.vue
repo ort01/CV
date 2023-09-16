@@ -3,7 +3,7 @@
         <div class="header__background">
             <div class="header__content">
                 <div class="header__content--left">
-                    <img src="../../avatar.jpeg" alt="avatar">
+                    <img src="../../avatar.jpg" alt="avatar">
                 </div>
                 <div class="header__content--right">
                     <h1>Kristína</h1>
@@ -19,7 +19,7 @@
                         </a>
                         <a href="https://github.com/ort01/CV">
                             <i class="material-symbols-outlined">
-                                link
+                                open_in_new
                             </i>
                             <p>This CV is written in Vue.js</p>
 
@@ -192,33 +192,76 @@
             <div class="body__right">
                 <div class="body__right--about-me">
                     <h3>About Me</h3>
-                    <p>Junior <span class="highlight">Front-End</span> / Full-Stack Web Developer with passion for UI & UX,
-                        driven to
+                    <p>Junior Front-End Web Developer with passion for UI & UX, driven to
                         learn new things. I enjoy working in an open team environment. I like to think I am
                         very versatile, approachable and reliable perfectionist. Eager to apply and futher develop
                         my skills.<br><br> I spend my spare time honing my skills in frontend development or for other
                         creative activities, I tend to retreat to video editing, photograpy, music and painting.</p>
                 </div>
                 <div class="body__right--experience">
-                    <h3>Programming experience</h3>
-                    <p>In a hobbyist capacity, I have actively engaged with these technologies to develop and
-                        enhance personal projects. My experience working with <span class="highlight">Vue.js</span>,
-                        employing
-                        <span class="highlight">ES6+</span> syntax, both through
-                        the <span class="highlight">Options API</span>
-                        and the <span class="highlight">Composition API</span>, has allowed me to build dynamic and
-                        interactive
-                        web applications. I
-                        have utilized <span class="highlight">SCSS</span> to provide a visually appealing
-                        <span class="highlight">Responsive</span> and <span class="highlight">Cross-Browser Compatible
-                            UX</span>. Additionally,
-                        I
-                        have integrated <span class="highlight">REST APIs</span> and <span class="highlight">GraphQL</span>
-                        into Vue.js projects
-                        to efficiently retrieve and
-                        manage data. By leveraging <span class="highlight">Vite</span>, I have optimized the development
-                        workflow.
-                    </p>
+                    <div class="title">
+                        <h3>Programming experience</h3>
+                        <a href="https://github.com/ort01">
+                            <div class="title__link">
+                                <p>See more</p>
+                                <i class="material-symbols-outlined md-18">
+                                    open_in_new
+                                </i>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="content">
+                        <a href="https://github.com/ort01/weather-app">
+                            <div class="content--app">
+                                <p>Weather App</p>
+                                <p>Application that displays weather for user prompted
+                                    location.
+                                </p>
+                            </div>
+                            <div class="content--tech-stack">
+                                <p>Vue.js (options API)</p>
+                                <p>TypeScript</p>
+                                <p>SCSS</p>
+                                <p>REST (Axios)</p>
+                                <p>Vite</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://github.com/ort01/live-chat-room">
+                            <div class="content--app">
+                                <p>Live Chat Room</p>
+                                <p>Application that provides a chat interface where registered users can exchange messages
+                                    in
+                                    real time.
+                                </p>
+                            </div>
+                            <div class="content--tech-stack">
+                                <p>Vue.js (composition API)</p>
+                                <p>Vue Router</p>
+                                <p>TypeScript</p>
+                                <p>SCSS</p>
+                                <p>Firebase</p>
+                                <p>Vite</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://github.com/ort01/https://github.com/ort01/pinia-vue">
+                            <div class="content--app">
+                                <p>Pinia Tasks</p>
+                                <p>Task-manager application that allows user to create, favorite and delete tasks.
+                                </p>
+                            </div>
+                            <div class="content--tech-stack">
+                                <p>Vue.js (composition API)</p>
+                                <p>SCSS</p>
+                                <p>Pinia</p>
+                                <p>json-server backend</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="body__right--work">
                     <h3>Work Experience</h3>
@@ -240,10 +283,10 @@
                         </p>
                         <p>2011 - 2015</p>
                     </div>
-                    <div class="content">
+                    <!-- <div class="content">
                         <p>Základná umelecká škola v Komárne</p>
                         <p>2002 - 2016</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -286,7 +329,7 @@
 
             & img {
                 width: 100%;
-                margin-bottom: 8px;
+                margin-bottom: -40px;
                 object-fit: scale-down;
                 // object-position: 50% 50%;
             }
@@ -428,18 +471,63 @@
         }
 
         &--experience {
-            margin-top: 40px;
+            margin-top: 30px;
 
-            & p {
+            & .title {
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+                margin-bottom: 15px;
+
+                & h3 {
+                    margin: 0;
+                }
+
+                &__link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    letter-spacing: 1px;
+                    font-weight: 100;
+                }
+            }
+
+            & .content {
                 font-size: 13px;
                 text-align: justify;
                 line-height: 18px;
                 font-weight: 300;
+                margin-bottom: 14px;
+
+                &--app {
+                    margin-bottom: 3px;
+
+                    & p:nth-child(1) {
+                        font-weight: 500;
+                    }
+                }
+
+                &--tech-stack {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-self: center;
+                    gap: 5px;
+                    font-size: 11.5px;
+                    font-weight: 100;
+
+                    & p {
+                        border: 1px solid rgb($color-beige-dark, 1);
+                        border-radius: 15px;
+                        padding: 2px 6px;
+                    }
+                }
             }
         }
 
         &--work {
-            margin-top: 40px;
+            margin-top: 30px;
 
             & .content {
                 font-weight: 300;
@@ -452,7 +540,7 @@
         }
 
         &--education {
-            margin-top: 40px;
+            margin-top: 30px;
 
             & .content {
                 font-weight: 300;
@@ -482,8 +570,13 @@ h3 {
     margin-bottom: 15px;
 }
 
-.highlight {
+.font-weight-500 {
     font-weight: 500;
+
+}
+
+.font-weight-100 {
+    font-weight: 100;
 }
 
 .skills-separation {
