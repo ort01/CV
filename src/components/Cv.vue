@@ -3,7 +3,7 @@
         <div class="header__background">
             <div class="header__content">
                 <div class="header__content--left">
-                    <img src="../../DSC07762-cv.jpg" alt="avatar">
+                    <img src="../../avatar.jpeg" alt="avatar">
                 </div>
                 <div class="header__content--right">
                     <h1>Kristína</h1>
