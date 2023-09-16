@@ -3,7 +3,7 @@
         <div class="header__background">
             <div class="header__content">
                 <div class="header__content--left">
-                    <img src="../../avatar.jpg" alt="avatar">
+                    <img src="../../avatar1.jpg" alt="avatar">
                 </div>
                 <div class="header__content--right">
                     <h1>Kristína</h1>
@@ -192,11 +192,12 @@
             <div class="body__right">
                 <div class="body__right--about-me">
                     <h3>About Me</h3>
-                    <p>Junior Front-End Web Developer with passion for UI & UX, driven to
-                        learn new things. I enjoy working in an open team environment. I like to think I am
-                        very versatile, approachable and reliable perfectionist. Eager to apply and futher develop
-                        my skills.<br><br> I spend my spare time honing my skills in frontend development or for other
-                        creative activities, I tend to retreat to video editing, photograpy, music and painting.</p>
+                    <p>Junior Front-End Web Developer with passion for UI & UX. I like to think I am very versatile,
+                        approachable and reliable perfectionist with a tendency towards creative solutions and
+                        out-of-the-box thinking. Driven to learn new things and put them to practical use.<br><br>
+
+                        My spare moments are dedicated to improving my frontend development skills and immersing myself in
+                        various creative pursuits, such as video editing, photography, music, and painting. </p>
                 </div>
                 <div class="body__right--experience">
                     <div class="title">
@@ -498,14 +499,14 @@
                 font-size: 13px;
                 text-align: justify;
                 line-height: 18px;
-                font-weight: 300;
-                margin-bottom: 14px;
+                font-weight: 100;
+                margin-bottom: 15px;
 
                 &--app {
                     margin-bottom: 3px;
 
                     & p:nth-child(1) {
-                        font-weight: 500;
+                        font-weight: 300;
                     }
                 }
 
@@ -514,13 +515,15 @@
                     flex-wrap: wrap;
                     align-self: center;
                     gap: 5px;
-                    font-size: 11.5px;
-                    font-weight: 100;
+                    font-size: 12px;
+                    font-weight: 300;
+                    margin-top: 5px;
 
                     & p {
                         border: 1px solid rgb($color-beige-dark, 1);
                         border-radius: 15px;
                         padding: 2px 6px;
+
                     }
                 }
             }
